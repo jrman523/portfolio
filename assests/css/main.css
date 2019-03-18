@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(216, 216, 216, 0.187);
+    background-color: rgba(216, 216, 216, 0.721);
     z-index: 10;
 }
 
@@ -21,8 +21,8 @@
     margin : 5px;
     padding: 10px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
     outline: none;
+    color: black;
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
     text-transform: uppercase;
@@ -32,25 +32,33 @@
 
 .nav-item:hover{
     text-decoration: none;
-    color: rgb(0, 0, 0);
     outline: none;
+    background-color: rgb(0, 114, 159);
     border-bottom: 3px solid  rgb(51, 197, 255);
+
+}
+.nav-item a:hover{
+    color: rgb(255, 255, 255);
 }
 
-.nav-item:focus{
+.nav-item:focus a{
     text-decoration: none;
     border-bottom: 3px solid  rgb(38, 147, 191);
     color: rgb(0, 0, 0);
     outline: none;
 }
 
-.nav-item:active{
+.nav-item:active a{
     text-decoration: none;
     outline: none;
     color: rgb(0, 0, 0);
 }
 
 .active{
+    background-color: rgb(118, 49, 160);
     border-bottom: 3px solid rgb(199, 108, 255);
     pointer-events: none;
+}
+.active a{
+    color: rgb(255, 255, 255);
 }
