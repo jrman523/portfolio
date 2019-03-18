@@ -1,7 +1,7 @@
 window.onload = function () {
-    $('#about').addClass('active');
-    $('#about-section').show();
-    $('#portfolio-section').hide();
+    $('#portfolio').addClass('active');
+    $('#portfolio-section').show();
+    $('#about-section').hide();
     $('#contact-section').hide();
 };
 
