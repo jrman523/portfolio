@@ -1,10 +1,6 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
 
-html {
-    scroll-behavior: smooth;
-}
-
 .nav{
     position: fixed;
     display: flex;
@@ -41,9 +37,6 @@ html {
     color: rgb(255, 255, 255);
 
 }
-/* .nav-item a:hover{
-    color: rgb(255, 255, 255);
-} */
 
 .nav-item:focus{
     text-decoration: none;
@@ -53,8 +46,8 @@ html {
 
 .nav-item:active{
     text-decoration: none;
+    color: rgb(255, 255, 255); 
     outline: none;
-    color: rgb(0, 0, 0);
 }
 
 .active{
@@ -63,6 +56,3 @@ html {
     pointer-events: none;
     color: rgb(255, 255, 255);
 }
-/* .active a{
-    color: rgb(255, 255, 255);
-} */

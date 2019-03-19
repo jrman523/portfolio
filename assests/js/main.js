@@ -10,21 +10,21 @@ $(document).on('click', '.nav-item', function () {
         $('#about').addClass('active');
         $('html, body').animate({
             scrollTop: $("#about-section").offset().top
-            }, 200);
+            }, 1000);
     } else if (active === 'portfolio') {
         $('#about').removeClass('active');
         $('#contact').removeClass('active');
         $('#portfolio').addClass('active');
         $('html, body').animate({
             scrollTop: $("#portfolio-section").offset().top
-            }, 200);
+            }, 1000);
     } else if (active === 'contact') {
         $('#about').removeClass('active');
         $('#portfolio').removeClass('active');
         $('#contact').addClass('active');
         $('html, body').animate({
             scrollTop: $("#contact-section").offset().top
-            }, 200);
+            }, 1000);
     }
 });
 
