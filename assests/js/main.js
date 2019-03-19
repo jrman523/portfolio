@@ -8,14 +8,23 @@ $(document).on('click', '.nav-item', function () {
         $('#portfolio').removeClass('active');
         $('#contact').removeClass('active');
         $('#about').addClass('active');
+        $('html, body').animate({
+            scrollTop: $("#about-section").offset().top
+            }, 200);
     } else if (active === 'portfolio') {
         $('#about').removeClass('active');
         $('#contact').removeClass('active');
         $('#portfolio').addClass('active');
+        $('html, body').animate({
+            scrollTop: $("#portfolio-section").offset().top
+            }, 200);
     } else if (active === 'contact') {
         $('#about').removeClass('active');
         $('#portfolio').removeClass('active');
         $('#contact').addClass('active');
+        $('html, body').animate({
+            scrollTop: $("#contact-section").offset().top
+            }, 200);
     }
 });
 
@@ -36,3 +45,4 @@ $(window).on('scroll', '.container', function () {
         $('#contact').addClass('active');
     }
 });
+
