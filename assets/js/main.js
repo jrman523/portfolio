@@ -30,15 +30,15 @@ $(document).on('scroll', function () {
     var contactSec = $("#contact-section").offset().top;
     var set = $(document).scrollTop();
     console.log(set);
-    if (set > aboutSec && set < portfolioSec && set < contactSec) {
+    if (set > aboutSec - 1 && set < portfolioSec - 1 && set < contactSec - 1) {
         $('#portfolio').removeClass('active');
         $('#contact').removeClass('active');
         $('#about').addClass('active');
-    } else if (set > portfolioSec && set < contactSec) {
+    } else if (set > portfolioSec - 1 && set < contactSec - 1) {
         $('#about').removeClass('active');
         $('#contact').removeClass('active');
         $('#portfolio').addClass('active');
-    } else if (set > contactSec) {
+    } else if (set > contactSec - 1) {
         $('#about').removeClass('active');
         $('#portfolio').removeClass('active');
         $('#contact').addClass('active');
