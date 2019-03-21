@@ -29,7 +29,6 @@ $(document).on('scroll', function () {
     var portfolioSec = $("#portfolio-section").offset().top;
     var contactSec = $("#contact-section").offset().top;
     var set = $(document).scrollTop();
-    console.log(set);
     if (set > aboutSec - 1 && set < portfolioSec - 1 && set < contactSec - 1) {
         $('#portfolio').removeClass('active');
         $('#contact').removeClass('active');
@@ -44,4 +43,3 @@ $(document).on('scroll', function () {
         $('#contact').addClass('active');
     }
 });
-

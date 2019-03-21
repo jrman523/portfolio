@@ -62,3 +62,10 @@
     min-height: 700px;
     background: transparent;
 }
+
+.content {
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    padding: 30px;
+}
