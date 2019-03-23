@@ -1,9 +1,9 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
-body #name #email {
+body, input, textarea {
     font-family: 'Rajdhani', sans-serif;
 }
- 
+
 .nav {
     position: fixed;
     display: flex;
@@ -66,7 +66,7 @@ body #name #email {
 }
 
 .content {
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 100px;
     padding: 30px;
@@ -87,10 +87,9 @@ body #name #email {
 
 .info {
     border: 0;
-    border-bottom: 2px solid #1976D2;
+    border-bottom: 3px solid rgb(0, 0, 0);
     width: 95%;
     font-size: 30px;
-    line-height: 35px;
     height: 70px;
     text-align: left;
     padding: 10px;
@@ -102,13 +101,10 @@ body #name #email {
 
 .info-area {
     border: 0;
-    border-bottom: 2px solid #1976D2;
-    border-left: 2px solid #1976D2;
+    border-bottom: 3px solid rgb(0, 0, 0);
     width: 95%;
-    height: 700px;
+    height: 300px;
     font-size: 30px;
-    line-height: 35px;
-    height: 70px;
     text-align: left;
     padding: 10px;
     background: transparent;
@@ -116,6 +112,19 @@ body #name #email {
     margin-bottom: 20px;
     outline-style: none;
     resize: none;
+}
+
+.info-area:focus, .info:focus {
+    border-bottom: 3px solid rgb(25, 118, 210);
+}
+
+.info-area::placeholder, .info::placeholder {
+    font-family: 'Rajdhani', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.info-area:focus::placeholder, .info:focus::placeholder {
+    color: rgb(25, 118, 210);
 }
 
 .flex {
@@ -127,6 +136,30 @@ body #name #email {
     width: 45%;
     margin: 10px;
     padding: 15px;
+    border: 0;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    background: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -moz-transform-duration: 0.4s;
+    -ms-transform-duration: 0.4s;
+    -o-transform-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+@media(max-width: 750px) {
+    .flex {
+        flex-direction: column;
+    }
+    .btn {
+        width: 95%;
+    }
 }
 
 .heading {

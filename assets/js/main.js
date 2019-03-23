@@ -43,3 +43,9 @@ $(document).on('scroll', function () {
         $('#contact').addClass('active');
     }
 });
+
+$('#reset').on('click', function(){
+    $('#name').text('');
+    $('#email').text('');
+    $('#message').text('');
+});
