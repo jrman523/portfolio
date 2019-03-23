@@ -1,8 +1,22 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
+/* global styles start */
+
 body, input, textarea {
     font-family: 'Rajdhani', sans-serif;
 }
+
+h1 {
+    font-size: 80px;
+}
+
+p {
+    font-size: 40px;
+}
+
+/* global styles end */
+
+/* styles start */
 
 .nav {
     position: fixed;
@@ -131,7 +145,7 @@ body, input, textarea {
     color: rgb(0, 0, 0);
 }
 
-.flex {
+.btn-flex {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -152,6 +166,7 @@ body, input, textarea {
     -moz-transform-duration: 0.4s;
     -ms-transform-duration: 0.4s;
     -o-transform-duration: 0.4s;
+    outline: none;
 }
 
 .btn:hover {
@@ -159,8 +174,52 @@ body, input, textarea {
     color: rgb(255, 255, 255);
 }
 
+.btn:focus {
+    outline: none;
+}
+
+.heading {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.about-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.245);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    line-height: 2;
+}
+
+span {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.link {
+    text-decoration: none;
+    outline: none;
+    color: rgb(0, 114, 159);
+}
+
+/* styles end */
+
+/* media queries start */
+
 @media(max-width: 750px) {
-    .flex {
+    .btn-flex {
         flex-direction: column;
         justify-content: center;
         padding: 10px;
@@ -171,7 +230,11 @@ body, input, textarea {
     }
 }
 
-.heading {
-    color: rgb(0, 0, 0);
-    text-align: center;
+@media(max-width: 900px) {
+
+    .about-flex {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
+/* media queries end */
