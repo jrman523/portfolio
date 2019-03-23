@@ -92,36 +92,32 @@ body, input, textarea {
 }
 
 .info {
-    border: 0;
+    border: 3px solid transparent;
     border-bottom: 3px solid rgb(0, 0, 0);
     width: 95%;
     font-size: 30px;
     height: 70px;
     text-align: left;
     padding: 10px;
-    background: transparent;
+    background-color: rgba(0, 0, 0, 0.245);
     color: rgb(0, 0, 0);
     margin-bottom: 20px;
     outline-style: none;
 }
 
 .info-area {
-    border: 0;
+    border: 3px solid transparent;
     border-bottom: 3px solid rgb(0, 0, 0);
     width: 95%;
     height: 300px;
     font-size: 30px;
     text-align: left;
     padding: 10px;
-    background: transparent;
+    background-color: rgba(0, 0, 0, 0.245);
     color: rgb(0, 0, 0);
     margin-bottom: 20px;
     outline-style: none;
     resize: none;
-}
-
-.info-area:focus, .info:focus {
-    border-bottom: 3px solid rgb(25, 118, 210);
 }
 
 .info-area::placeholder, .info::placeholder {
@@ -129,8 +125,12 @@ body, input, textarea {
     color: rgb(0, 0, 0);
 }
 
+.info-area:focus, .info:focus {
+    background-color: rgb(255, 255, 255);
+}
+
 .info-area:focus::placeholder, .info:focus::placeholder {
-    color: rgb(25, 118, 210);
+    color: rgb(0, 0, 0);
 }
 
 .flex {
@@ -144,7 +144,7 @@ body, input, textarea {
     padding: 15px;
     border: 0;
     border-bottom: 3px solid rgb(0, 0, 0);
-    background: transparent;
+    background-color: rgba(0, 0, 0, 0.245);
     color: rgb(0, 0, 0);
     font-size: 30px;
     transition-duration: 0.4s;
