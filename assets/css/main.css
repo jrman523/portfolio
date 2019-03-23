@@ -214,6 +214,10 @@ span {
     color: rgb(0, 114, 159);
 }
 
+.img {
+    width: 120%;
+}
+
 /* styles end */
 
 /* media queries start */
@@ -226,15 +230,25 @@ span {
     }
     .btn {
         width: 99%;
-        margin: 10px
+        margin: 10px;
     }
 }
 
-@media(max-width: 900px) {
-
+@media(max-width: 1600px) {
     .about-flex {
         flex-direction: column;
         justify-content: center;
     }
+    .img {
+        width: 100%;
+        max-height: 100%;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-size: 30px;
+    }
 }
+
 /* media queries end */
