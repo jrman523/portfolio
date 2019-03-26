@@ -5,6 +5,7 @@
 
 body, input, textarea {
     font-family: 'Rajdhani', sans-serif;
+    -webkit-overflow-scrolling: touch;
 }
 
 h1 {
