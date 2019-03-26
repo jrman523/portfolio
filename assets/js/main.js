@@ -1,5 +1,6 @@
 window.onload = function () {
     $('#about').addClass('active');
+    $('html,body').animate({ scrollTop: $("#about-section").offset().top }, 1000);
 };
 
 $(document).on('click', '.nav-item', function () {
