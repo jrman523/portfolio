@@ -241,11 +241,11 @@ span {
 .link {
     text-decoration: none;
     outline: none;
-    color: rgb(0, 114, 159);
+    color:rgb(118, 49, 160);
 }
 
 .img {
-    width: 120%;
+    width: 110%;
 }
 
 .port {
