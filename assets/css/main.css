@@ -155,7 +155,7 @@ p {
 }
 
 .info-area:focus, .info:focus {
-    background-color: rgb(255, 255, 255);
+    background-color:rgba(51, 197, 255, 0.657);
 }
 
 .info-area:focus::placeholder, .info:focus::placeholder {
