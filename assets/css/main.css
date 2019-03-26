@@ -197,6 +197,7 @@ p {
 .heading {
     color: rgb(0, 0, 0);
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .about-flex {
@@ -210,6 +211,18 @@ p {
     color: rgb(0, 0, 0);
     padding: 15px;
     line-height: 2;
+}
+
+.portfolio {
+    background-color: rgba(0, 0, 0, 0.245);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    height: auto;
+    min-height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    justify-content: center;
 }
 
 span {
@@ -234,6 +247,27 @@ span {
     width: 120%;
 }
 
+.port {
+    padding: 10px;
+    background-color: rgba(134, 76, 200, 0.65);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.port:hover {
+    background-color: rgba(255, 255, 255, 0.507);
+    color: rgb(0, 0, 0);
+}
+
+.middle {
+    position: relative;
+    top: 30%;
+}
+
 /* styles end */
 
 /* media queries start */
@@ -248,8 +282,15 @@ span {
         width: 99%;
         margin: 10px;
     }
-    .footer{
+    .footer {
         font-size: 15px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .middle {
+        position: relative;
+        top: 0;
     }
 }
 
