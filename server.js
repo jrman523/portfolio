@@ -22,13 +22,13 @@ app.listen(PORT, function () {
     );
 });
 
-axios.get("https://www.google.com/").then(function (res) {
-    setInterval(function () {
-        console.log(`the response status is ${res.status} its alive`);
-    }, 50000);
-})
-    .catch(function (err) {
-        console.log(`this broke it : ${err}`);
-    });
+// axios.get("https://www.google.com/").then(function (res) {
+//     setInterval(function () {
+//         console.log(`the response status is ${res.status} its alive`);
+//     }, 50000);
+// })
+//     .catch(function (err) {
+//         console.log(`this broke it : ${err}`);
+//     });
 
 module.exports = app;
