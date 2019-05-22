@@ -11,14 +11,12 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Routes
-require("./routes/html-Routes")(app);
+require("./routes/html-routes")(app);
 
 //starting the server
 app.listen(PORT, function () {
     console.log(
-        "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-        PORT,
-        PORT
+        `==> 🌎  Listening on ${PORT} . Visit http://localhost:${PORT}/ in your browser.`
     );
 });
 
